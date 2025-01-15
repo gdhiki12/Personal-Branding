@@ -220,6 +220,35 @@ body {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+/* Timeline Items */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.timeline-content h4 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
 /* Project Experience */
 .project-experience {
     margin-bottom: 1.75rem;
@@ -258,6 +287,26 @@ body {
 .project-experience strong {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+/* Certification Items */
+.certification-item {
+    margin-bottom: 1.25rem;
+}
+
+.certification-item:last-child {
+    margin-bottom: 0;
+}
+
+.certification-item h4 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.certification-item p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
 }
 
 /* Footer */
@@ -371,6 +420,11 @@ body {
     .cv-main,
     .cv-sidebar {
         padding: 1.5rem;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 
     .cv-section {
