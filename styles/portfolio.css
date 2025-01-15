@@ -1,0 +1,489 @@
+:root {
+    /* Color Palette */
+    --primary-color: #4B9CD3;
+    --primary-dark: #2C6B94;
+    --secondary-color: #F0E5D8;
+    --accent-color: #F4A261;
+    --background-light: #F9FAFB;
+    --background-dark: #0F172A;
+    --text-primary: #2D3748;
+    --text-secondary: #4A5568;
+    --text-light: #A0AEC0;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    --gradient-accent: linear-gradient(135deg, var(--accent-color), #E76F51);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-light);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 0.75rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--primary-dark);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 0.875rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 0.9375rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+    padding: 6rem 0 3rem;
+    background: var(--background-light);
+    text-align: center;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 0.4rem 0.875rem;
+    background: var(--secondary-color);
+    color: var(--text-primary);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+}
+
+.portfolio-hero h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.875rem;
+    line-height: 1.2;
+}
+
+.portfolio-hero p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Portfolio Detail Section */
+.portfolio-detail {
+    padding: 3rem 0;
+}
+
+.project-detail {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.75rem;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.project-detail h2 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.project-overview {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.project-image {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tech-stack h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.875rem;
+}
+
+.tech-stack ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.875rem;
+}
+
+.tech-stack li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+
+.tech-stack i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9375rem;
+}
+
+.btn i {
+    margin-left: 0.5rem;
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: var(--secondary-color);
+    color: var(--text-primary);
+}
+
+.secondary-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-description {
+    margin-top: 2.5rem;
+}
+
+.project-description h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+}
+
+/* CAR Analysis Section */
+.car-analysis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.car-item {
+    background: var(--background-light);
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.car-item h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.875rem;
+}
+
+.car-item p {
+    color: var(--text-secondary);
+    margin-bottom: 0.875rem;
+    font-size: 0.9375rem;
+}
+
+.car-item ul {
+    list-style: none;
+}
+
+.car-item li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 0.9375rem;
+}
+
+.car-item li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Key Features Section */
+.key-features h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+}
+
+.key-features ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    list-style: none;
+}
+
+.key-features li {
+    background: var(--secondary-color);
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.9375rem;
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--background-dark);
+    color: white;
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .portfolio-hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .project-overview {
+        grid-template-columns: 1fr 0.8fr;
+    }
+}
+
+@media (max-width: 968px) {
+    .portfolio-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .project-overview {
+        grid-template-columns: 1fr;
+    }
+    
+    .car-analysis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-image {
+        max-height: 400px;
+    }
+    
+    .project-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .portfolio-hero {
+        padding: 5rem 0 2.5rem;
+    }
+    
+    .portfolio-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .project-detail {
+        padding: 1.25rem;
+    }
+    
+    .car-analysis {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-stack ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-hero {
+        padding: 4rem 0 2rem;
+    }
+    
+    .portfolio-hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-badge {
+        font-size: 0.8125rem;
+    }
+    
+    .project-detail h2 {
+        font-size: 1.25rem;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}

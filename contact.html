@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Maria Goreti Dhiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">MGD</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="portfolio.html">Portofolio</a>
+                <a href="contact.html" class="active">Kontak</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Kontak</span>
+                <h1>Mari Terhubung</h1>
+                <p>Tertarik untuk berkolaborasi atau memiliki pertanyaan? Hubungi saya!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>givendhiki@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telepon</h3>
+                        <p>+62 81246455796</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lokasi</h3>
+                        <p>Surabaya, Indonesia</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Media Sosial</h3>
+                        <div class="social-grid">
+                            <a href="#" class="social-card" title="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-card" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-card" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-card" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Kirim Pesan</h2>
+                    <form id="contactForm" action="/send-message" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">
+                            Kirim Pesan <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="container">
+            <h2>Jadwal Meeting</h2>
+            <p>Anda juga bisa menjadwalkan meeting langsung melalui kalendar saya:</p>
+            <a href="#" class="btn secondary-btn">
+                <i class="far fa-calendar-alt"></i> Atur Jadwal Meeting
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Maria Goreti Dhiki</h3>
+                    <p>Mahasiswa Teknik Informatika UNTAG Surabaya</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maria Goreti Dhiki. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Form validation and submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                // Here you would typically send the form data to your backend
+                alert('Terima kasih! Pesan Anda telah terkirim.');
+                this.reset();
+            } else {
+                alert('Mohon isi semua field yang diperlukan');
+            }
+        });
+    </script>
+</body>
+</html>

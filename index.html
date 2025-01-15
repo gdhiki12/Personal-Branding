@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maria Goreti Dhiki - Mahasiswa Teknik Informatika & Full Stack Developer | UNTAG Surabaya">
+    <meta name="keywords" content="Web Developer Projects, Laravel, AR Development, Maria Goreti Dhiki, UNTAG Surabaya">
+    <meta name="author" content="Maria Goreti Dhiki">
+    <title>Maria Goreti Dhiki | Teknik Informatika Student & Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">MGD</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="portfolio.html">Portofolio</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-tags">
+                        <span class="hero-badge primary">Mahasiswa Teknik Informatika</span>
+                        <span class="hero-badge secondary">Full Stack Developer</span>
+                    </div>
+                    <h1 class="hero-title">Membangun Solusi Digital Inovatif</h1>
+                    <h2 class="hero-subtitle">Maria Goreti Dhiki</h2>
+                    <p class="hero-description">Mahasiswa Teknik Informatika UNTAG SURABAYA (2022-sekarang) dengan fokus pada pengembangan web dan teknologi AR. Memadukan kreativitas dan keahlian teknis untuk menciptakan solusi digital yang inovatif.</p>
+                    <div class="hero-expertise">
+                        <div class="expertise-item" data-count="3">
+                            <span class="expertise-number">3</span>
+                            <span class="expertise-label">Proyek Web & AR</span>
+                        </div>
+                        <div class="expertise-item" data-count="2">
+                            <span class="expertise-number">2</span>
+                            <span class="expertise-label">Sertifikasi</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="portfolio.html" class="btn primary-btn">
+                            Lihat Portofolio <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="btn secondary-btn">
+                            Hubungi Saya <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/profile.jpg" alt="Maria Goreti Dhiki" class="profile-img">
+                    <div class="hero-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Proyek Unggulan</span>
+                <h2 class="section-title">Proyek Terbaru</h2>
+                <p class="section-subtitle">Portofolio proyek pengembangan web dan AR</p>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-category="all">Semua Proyek</button>
+                <button class="tab-btn" data-category="web">Web Development</button>
+                <button class="tab-btn" data-category="ar">AR Development</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Sistem Parkir Cerdas -->
+                <article class="project-card featured" data-category="web">
+                    <div class="project-image">
+                        <img src="img/parking-system.avif" alt="Sistem Parkir Cerdas">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3>Sistem Manajemen Parkir</h3>
+                        <p>Sistem parkir berbasis web dengan fitur manajemen kendaraan, pemantauan slot parkir, dan sistem pembayaran terintegrasi.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Lihat Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link">Kode Sumber <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sistem Reservasi Hotel -->
+                <article class="project-card featured" data-category="web">
+                    <div class="project-image">
+                        <img src="img/hotel-reservation.avif" alt="Sistem Reservasi Hotel">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3>Sistem Reservasi Hotel</h3>
+                        <p>Aplikasi pemesanan hotel dengan fitur manajemen kamar, sistem reservasi online, dan integrasi pembayaran.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Lihat Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link">Kode Sumber <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Katalog AR Furniture -->
+                <article class="project-card" data-category="ar">
+                    <div class="project-image">
+                        <img src="img/ar-furniture.avif" alt="Katalog AR Furniture">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>AR Technology</span>
+                                <span>3D Modeling</span>
+                                <span>Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">AR Development</span>
+                        <h3>Katalog Produk Furniture AR</h3>
+                        <p>Aplikasi katalog furniture dengan teknologi Augmented Reality untuk visualisasi produk dalam ruangan nyata.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Sertifikasi</span>
+                <h2 class="section-title">Sertifikasi Profesional</h2>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <i class="fab fa-figma"></i>
+                    <h3>Figma Design</h3>
+                    <p>Sertifikasi kemampuan desain UI/UX menggunakan Figma</p>
+                </div>
+                <div class="certification-card">
+                    <i class="fab fa-google"></i>
+                    <h3>Google Ads</h3>
+                    <p>Sertifikasi professional dalam pengelolaan kampanye Google Ads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Maria Goreti Dhiki</h3>
+                    <p>Mahasiswa Teknik Informatika UNTAG Surabaya</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maria Goreti Dhiki. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
